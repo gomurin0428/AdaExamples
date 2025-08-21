@@ -1,0 +1,10 @@
+project Load_Image is
+   for Languages use ("Ada");
+   for Source_Dirs use (".");
+   for Object_Dir use "obj";
+   for Main use ("test_load_image.adb");
+
+   package Compiler is
+      for Default_Switches ("Ada") use ("-gnat2022", "-gnatwa");
+   end Compiler;
+end Load_Image;
